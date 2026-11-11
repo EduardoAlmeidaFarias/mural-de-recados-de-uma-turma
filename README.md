@@ -1,16 +1,125 @@
-# React + Vite
+# 📌 Mural de Recados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida com **React e Vite**, com o objetivo de permitir o cadastro, a visualização, a edição e a exclusão de recados de maneira simples e organizada.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido como prática de desenvolvimento frontend, utilizando componentes reutilizáveis, gerenciamento de estados, navegação entre páginas e armazenamento persistente no navegador.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+- [x] Cadastro de novos recados.
+- [x] Listagem de recados publicados.
+- [x] Edição de recados existentes.
+- [x] Exclusão de recados.
+- [x] Armazenamento dos dados com localStorage.
+- [x] Navegação entre páginas com React Router.
+- [x] Formulários controlados com useState.
+- [x] Componentes reutilizáveis.
+- [x] Estilização com CSS Modules.
+- [x] Página para endereços não encontrados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- **React:** construção da interface.
+- **Vite:** ferramenta de desenvolvimento e inicialização do projeto.
+- **JavaScript:** lógica e funcionalidades.
+- **React Router DOM:** navegação entre páginas.
+- **CSS Modules:** estilização dos componentes.
+- **localStorage:** armazenamento dos recados no navegador.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Estrutura do projeto
+
+```text
+mural-de-recados/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Menu.jsx
+│   │   ├── Menu.module.css
+│   │   ├── Recado.jsx
+│   │   ├── Recado.module.css
+│   │   ├── FormRecado.jsx
+│   │   └── FormRecado.module.css
+│   │
+│   ├── pages/
+│   │   ├── Mural.jsx
+│   │   ├── NovoRecado.jsx
+│   │   ├── EditarRecado.jsx
+│   │   └── NaoEncontrada.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
+## ⚙️ Como executar o projeto
+
+### 1. Pré-requisitos
+
+- Node.js instalado.
+- npm instalado.
+- Git instalado (opcional para executar o projeto).
+
+### 2. Clonar o repositório
+
+```bash
+git clone https://github.com/EduardoAlmeidaFarias/mural-de-recados-de-uma-turma.git
+```
+
+### 3. Entrar na pasta
+
+```bash
+cd mural-de-recados-de-uma-turma
+```
+
+### 4. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 5. Executar o projeto
+
+```bash
+npm run dev
+```
+
+Após iniciar, acesse o endereço indicado pelo Vite, normalmente:
+
+http://localhost:5173/
+
+## 💾 Armazenamento de dados
+
+O projeto utiliza o localStorage para armazenar os recados no próprio navegador.
+
+Dessa forma, as informações continuam disponíveis após atualizar a página ou fechar e abrir novamente o navegador, no mesmo dispositivo e perfil de navegador.
+
+## 📚 Conceitos de React aplicados
+
+- Componentização.
+- Props.
+- useState.
+- useEffect.
+- Renderização de listas com map e key.
+- Formulários controlados.
+- Rotas com React Router.
+- Operações CRUD.
+- Persistência de dados.
+- CSS Modules.
+
+## 🎯 Objetivo acadêmico
+
+Este projeto tem como objetivo aplicar na prática os principais conceitos de desenvolvimento frontend com React, demonstrando a construção de uma aplicação organizada, funcional e reutilizável.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Eduardo de Almeida Farias**.
+
+Projeto acadêmico — Desenvolvimento Web.
+
+---
+
+⭐ Se este projeto foi útil ou interessante, considere deixar uma estrela no repositório!
