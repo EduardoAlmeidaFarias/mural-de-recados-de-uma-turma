@@ -1,6 +1,6 @@
 import Recado from "../components/Recado";
 
-//a lista de mensagens
+//2 recebe a lista de mensagens
 //funcao para excluir mensagens
 function Mural({ recados, remover }) {
   return (
@@ -21,9 +21,9 @@ function Mural({ recados, remover }) {
             gap: "12px"
           }}
         >
-          {/*lista com map e key sistema
-          pega cada recado da caixa e coloca na tela
-          o recado que está sendo mostrado naquele momento*/}
+          {/*3 sistema pega cada recado da caixa e coloca na tela
+          o recado que está sendo mostrado naquele momento
+          5 lista cada recado*/}
           {recados.map((recado) => (
             <Recado //identificador de cada recado
               key={recado.id}

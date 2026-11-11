@@ -1,7 +1,7 @@
 import { useState } from "react";
 import estilos from "./FormRecado.module.css";
 
-//useState e formulário controlado
+//4 useState e formulário controlado
 //funcao para salvar o recado
 //informacoes que serao colocadas no formulario
 function FormRecado({ salvar, inicial = {} }) {
@@ -30,7 +30,7 @@ function FormRecado({ salvar, inicial = {} }) {
     <form className={estilos.form} onSubmit={enviar}>
       <label>Seu Nome:</label>
 
-      <input //campo do autor //campo da mensagem
+      <input //4 campo do autor //campo da mensagem
         type="text"
         value={autor}//mostra o nome do autor guardado
         //percebe quando você digita

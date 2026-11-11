@@ -8,7 +8,7 @@ import NovoRecado from "./pages/NovoRecado";
 import EditarRecado from "./pages/EditarRecado";
 import NaoEncontrada from "./pages/NaoEncontrada";
 
-function App() { //cria a lista de recados
+function App() { //3 cria a lista de recados
   const [recados, setRecados] = useState(() => {
     try { //6 procura os recados que ja estavam guardados 
       const dados = localStorage.getItem("recados");
@@ -19,15 +19,14 @@ function App() { //cria a lista de recados
     }
   });
 
-  //e a leitura acontece na inicializacao do estado
-  useEffect(() => {//observa quando a lista muda
+  useEffect(() => {//6 observa quando a lista muda
     localStorage.setItem( //guarda os dados
       "recados", //nome da gaveta onde guardamos
       JSON.stringify(recados)//transforma a li em tx para conseguir guardar
     );
   }, [recados]);
 
-  //pega essas informações e coloca 
+  //5 pega essas informações e coloca 
   //um novo recado dentro da lista
   function criar(dados) {
     const novoRecado = {
