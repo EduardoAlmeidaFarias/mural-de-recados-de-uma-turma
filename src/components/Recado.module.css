@@ -1,0 +1,46 @@
+.recado {
+  list-style: none;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.recado h3 {
+  margin-top: 0;
+  color: red;
+}
+
+.recado p {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.recado small {
+  color: black;
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.acoes a,
+.acoes button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.acoes a {
+  background: blue;
+  color: white;
+}
+
+.acoes button {
+  background: red;
+  color: white;
+}
